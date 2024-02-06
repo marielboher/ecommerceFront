@@ -1,0 +1,36 @@
+body{
+    margin: 0%;
+}
+
+.home{
+    padding: 3%;
+}
+.container-home{
+    background-image: url("/images/fondo3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.text-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+.text-home h1{
+    font-size: 6rem;
+    color: #555843;
+}
+.text-home p{
+    font-size: 1.3rem;
+    color: #555843;
+}

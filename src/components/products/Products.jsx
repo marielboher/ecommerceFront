@@ -4,9 +4,7 @@ import "./products.css";
 import { useAuth } from "../../context/AuthContext";
 
 const Products = () => {
-  const { isAuth, user, loading } = useAuth();
   const [products, setProducts] = useState([]);
-  // console.log("isAuth en product", isAuth)
   useEffect(() => {
     fetch("http://localhost:8000/api/products/")
       .then((response) => response.json())
@@ -46,7 +44,6 @@ const Products = () => {
       }
 
       const data = await response.json();
-      console.log("ID del carrito:", data.id);
       return data.id;
     } catch (error) {
       console.error(error.message);
@@ -61,7 +58,6 @@ const Products = () => {
       }
 
       const token = localStorage.getItem("token");
-      console.log("token", token);
       if (!token) {
         throw new Error("No autenticado");
       }
@@ -96,7 +92,6 @@ const Products = () => {
               <img src={product.thumbnails} alt={product.title} />
               <h3>{product.title}</h3>
               <p>${product.price}</p>
-              {/* Otras propiedades del producto */}
               <button onClick={() => agregarProductoAlCarrito(product._id)}>
                 ADD TO CART
               </button>

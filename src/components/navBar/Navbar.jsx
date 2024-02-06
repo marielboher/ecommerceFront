@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import "./navBar.css";
+import { useAuth } from "../../context/AuthContext";
 
 const Navbar = () => {
+  const { user } = useAuth();
   return (
     <div className="nav-container">
       <ul>
@@ -13,6 +15,16 @@ const Navbar = () => {
         </li>
         <li>About</li>
         <li>Articles</li>
+        {user && (
+          <ul>
+            <li>
+              <Link to="/profile">MI PROFILE </Link>
+            </li>
+            <li>
+              <Link to="/chart">CHART </Link>
+            </li>
+          </ul>
+        )}
       </ul>
     </div>
   );

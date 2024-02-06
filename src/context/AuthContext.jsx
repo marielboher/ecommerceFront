@@ -49,9 +49,7 @@ export const AuthProvider = ({ children }) => {
         return;
       }
       try {
-        console.log("respuesta del puto");
         const res = await verifyToken(token);
-        console.log("respuesta del verify", res);
         if (res.status === 200) {
           setIsAuth(true);
           setUser(res.data);

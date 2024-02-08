@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./featured.css";
-import image1 from "../../../public/images/plant4.jpg"
-import image2 from "../../../public/images/plant3.jpg"
-import image3 from "../../../public/images/plant2.jpg"
+import image1 from "../../images/plant4.jpg"
+import image2 from "../../images/plant3.jpg"
+import image3 from "../../images/plant2.jpg"
 
 
 const Featured = () => {

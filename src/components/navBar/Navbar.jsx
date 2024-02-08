@@ -13,17 +13,20 @@ const Navbar = () => {
         <li>
           <Link to="/shop">Shop</Link>
         </li>
-        <li>About</li>
-        <li>Articles</li>
         {user && (
           <ul>
             <li>
-              <Link to="/profile">MI PROFILE </Link>
+              <Link to="/profile">MI PROFILE</Link>
             </li>
             <li>
-              <Link to="/chart">CHART </Link>
+              <Link to="/chart">CHART</Link>
             </li>
           </ul>
+        )}
+        {user && user.role === "admin" && (
+          <li>
+            <Link to="/admin">ADMIN</Link>
+          </li>
         )}
       </ul>
     </div>

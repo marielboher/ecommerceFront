@@ -3,10 +3,10 @@ body{
 }
 
 .home{
-    padding: 3%;
+    padding: 5%;
 }
 .container-home{
-    background-image: url("/images/fondo3.webp");
+    background-image: url("/src/images/fondo3.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;

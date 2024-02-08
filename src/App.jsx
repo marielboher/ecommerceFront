@@ -10,6 +10,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import Shop from "./components/shop/Shop";
 import Profile from "./components/profile/Profile";
 import Chart from "./components/chart/Chart";
+import Admin from "./components/admin/Admin";
 
 function App() {
   // const [user, setUser] = useState(null);
@@ -32,6 +33,7 @@ function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/chart" element={<Chart />} />
+            <Route path="/admin" element={<Admin />} />
           </Route>
         </Routes>
       </AuthProvider>

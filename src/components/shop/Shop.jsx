@@ -24,7 +24,7 @@ const Shop = () => {
                 </svg>
               </div>
 
-              <span class="main__scroll-text">SCROLL</span>
+              <span className="main__scroll-text">SCROLL</span>
             </a>
           </div>
         </div>
